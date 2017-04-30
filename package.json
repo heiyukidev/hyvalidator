@@ -1,10 +1,10 @@
 {
   "name": "hyvalidator",
-  "version": "0.0.0",
-  "description": "Small Module to validate Strings and Integers",
+  "version": "0.3.0",
+  "description": "Small Module to validate Javascript Variable (Objects) According to Rules",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "Khaled Romdhane <heiyukidev@gmail.com> (https://github.com/heiyukidev)",
   "license": "MIT",
@@ -14,5 +14,9 @@
     "form",
     "validation",
     "heiyuki"
-  ]
+  ],
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "mocha": "^3.3.0"
+  }
 }
