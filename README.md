@@ -23,11 +23,11 @@ If you build a validator I will happily include it in the main package as long a
 
 ## Test The Module
 You can of corse test the module. Our tests are written with just MochaJS.
-We also have included a test Image within our test files.
+currently only unit testing of a couple validators.
 ```bash
 npm test
 ```
-
+This Module is written with functionnal programming principles in mind.
 ## License
 MIT [heiyukidev](https://github.com/heiyukidev)
 

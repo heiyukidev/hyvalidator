@@ -1,6 +1,6 @@
 {
   "name": "hyvalidator",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Small Module to validate Javascript Variable (Objects) According to Rules",
   "main": "index.js",
   "scripts": {
