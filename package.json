@@ -1,0 +1,18 @@
+{
+  "name": "hyvalidator",
+  "version": "0.0.0",
+  "description": "Small Module to validate Strings and Integers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Khaled Romdhane <heiyukidev@gmail.com> (https://github.com/heiyukidev)",
+  "license": "MIT",
+  "keywords": [
+    "validator",
+    "validation",
+    "form",
+    "validation",
+    "heiyuki"
+  ]
+}
