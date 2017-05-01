@@ -1,7 +1,7 @@
 {
   "name": "hyvalidator",
-  "version": "0.3.1",
-  "description": "Small Module to validate Javascript Variable (Objects) According to Rules",
+  "version": "0.4.1",
+  "description": "Small Module to validate Javascript Variable (Objects) According to a set of predefined Rules",
   "main": "index.js",
   "scripts": {
     "test": "mocha"

@@ -28,7 +28,7 @@ function isValid(object, rules) {
 //////////////////////////////////////////////////////////////////////////////////////
 const tests = [
     equalsValidation, maxValidation, minValidation
-]
+];
 
 function equalsValidation(object, rules) {
     if (rules.validation.equals) {
@@ -59,7 +59,7 @@ function minValidation(object, rules) {
 //////////////////////////////////////////////////////////////////////////////////////
 ////////Rule Constructor
 //////////////////////////////////////////////////////////////////////////////////////
-function MakeRules() {
+function Rule() {
     this.type = 'number';
     this.validation = new Object();
     this.error = 'This Variable is expected to be a number';
@@ -101,5 +101,5 @@ function MakeRules() {
 
 
 module.exports.isNumber = isNumber;
-module.exports.MakeRules = MakeRules;
+module.exports.Rule = Rule;
 module.exports.isValid = isValid;

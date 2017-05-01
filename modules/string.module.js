@@ -6,8 +6,6 @@ function isString(object) {
 }
 
 
-
-
 function isValid(object, rules) {
     var errors = new Array();
     if (!isString(object)) {
@@ -30,7 +28,7 @@ function isValid(object, rules) {
 ////////Tests Declarations
 //////////////////////////////////////////////////////////////////////////////////////
 const tests = [
-    equalsValidation, lengthValidation
+    equalsValidation, lengthValidation, maxLengthValidation, minLengthValidation, emailValidation
 ]
 
 function equalsValidation(object, rules) {
@@ -52,7 +50,7 @@ function lengthValidation(object, rules) {
 
 function maxLengthValidation(object, rules) {
     if (rules.validation.maxLength) {
-        if (rules.validation.maxLength.value <= object.length) {
+        if (rules.validation.maxLength.value < object.length) {
             return rules.validation.maxLength.error;
         }
     }
@@ -67,10 +65,19 @@ function minLengthValidation(object, rules) {
     }
     return;
 }
+function emailValidation(object, rules) {
+    if (rules.validation.email) {
+        var regex = /\S+@\S+\.\S+/;
+        if (!regex.test(object)) {
+            return rules.validation.email.error;
+        }
+    }
+    return;
+}
 //////////////////////////////////////////////////////////////////////////////////////
 ////////Rule Constructor
 //////////////////////////////////////////////////////////////////////////////////////
-function MakeRules() {
+function Rule() {
     this.type = 'string';
     this.validation = new Object();
     this.error = 'This Variable is expected to be a string';
@@ -119,9 +126,19 @@ function MakeRules() {
         this.validation.maxLength = maxLength;
         return this;
     }
+    this.setIsEmail = function (msg) {
+        var email = new Object();
+        if (msg) {
+            email.error = msg;
+        } else {
+            email.error = "This String Should Be an Email";
+        }
+        this.validation.email = email;
+        return this;
+    }
 }
 
 
 module.exports.isString = isString;
-module.exports.MakeRules = MakeRules;
+module.exports.Rule = Rule;
 module.exports.isValid = isValid;

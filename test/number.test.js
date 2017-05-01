@@ -5,7 +5,7 @@ const assert = require('assert');
 
 function runTest() {
     describe('Testing setEquals ', function () {
-        var rules = new Numbers.MakeRules();
+        var rules = new Numbers.Rule;
         rules.setEquals(2);
 
         it('Checking if 2 == setEquals(2) is valid ', function () {
@@ -18,7 +18,7 @@ function runTest() {
     });
 
     describe('Testing setMax', function () {
-        var rules2 = new Numbers.MakeRules();
+        var rules2 = new Numbers.Rule;
         rules2.setMin(11);
         it('Checking if 12 >= setMin(11) is valid', function () {
             assert.equal(null, Numbers.isValid(12, rules2));
@@ -29,7 +29,7 @@ function runTest() {
     });
 
     describe('Testing setMin ', function () {
-        var rules3 = new Numbers.MakeRules();
+        var rules3 = new Numbers.Rule;
         rules3.setMax(92);
 
         it('Checking if 12 <= setMax(92) is valid', function () {

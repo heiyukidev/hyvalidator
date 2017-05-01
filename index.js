@@ -7,7 +7,12 @@ const strings = require('./modules/string.module.js');
 
 
 function validate(object, rules) {
-    numbers.isValid(object,rules);
+    if (rules.type === 'number') {
+        numbers.isValid(object, rules);
+    } else if (rules.type === 'string') {
+        numbers.isValid(object, rules);
+    }
+    return null;
 }
 
 

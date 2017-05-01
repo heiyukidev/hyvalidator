@@ -4,6 +4,10 @@ const typeTest = require('./type.test.js');
 const numberTest = require('./number.test.js');
 const stringTest = require('./string.test.js');
 
+
+const Strings = require('../modules/string.module.js');
+
+
 const types = [
     'array',
     'object',
@@ -26,3 +30,15 @@ describe('Number Rules Unit Testing ', function () {
 describe('String Rules Unit Testing ', function () {
     stringTest();
 });
+
+
+describe('Testing Main Module', function () {
+
+    it("Checking if index.js is exporting validate String", function () {
+        let rules = new Strings.Rule;
+        console.log(rules);
+        assert.equal(null, validate('Toutou', rules));
+    });
+});
+
+
