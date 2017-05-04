@@ -8,7 +8,7 @@ function isNumber(object) {
 function isValid(object, rules) {
     var errors = new Array();
     if (!isNumber(object)) {
-        errors.push(object.error);
+        errors.push(rules.error);
     } else {
         for (var i = 0; i < tests.length; i++) {
             var auxErrors = tests[i](object, rules);

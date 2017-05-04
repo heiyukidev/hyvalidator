@@ -9,7 +9,7 @@ function isString(object) {
 function isValid(object, rules) {
     var errors = new Array();
     if (!isString(object)) {
-        errors.push(object.error);
+        errors.push(rules.error);
     } else {
         for (var i = 0; i < tests.length; i++) {
             var auxErrors = tests[i](object, rules);
@@ -22,7 +22,6 @@ function isValid(object, rules) {
         return null;
     }
     return errors;
-
 }
 //////////////////////////////////////////////////////////////////////////////////////
 ////////Tests Declarations

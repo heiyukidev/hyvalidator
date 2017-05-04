@@ -8,7 +8,12 @@ But you can have a teste of why it does by running the tests
 npm install hyvalidator --save
 ```
 
+```javascript
+    const hyvalidate = require('hyvalidator');
 
+
+    
+```
 
 
 # Notes:
