@@ -1,6 +1,6 @@
 {
   "name": "hyvalidator",
-  "version": "0.4.1",
+  "version": "0.8.0",
   "description": "Small Module to validate Javascript Variable (Objects) According to a set of predefined Rules",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,10 @@
     "validation",
     "form",
     "validation",
-    "heiyuki"
+    "heiyuki",
+    "types",
+    "type checking",
+    "array type"
   ],
   "devDependencies": {
     "assert": "^1.4.1",
