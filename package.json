@@ -1,37 +1,37 @@
 {
-  "name": "hyvalidator",
-  "version": "0.8.0",
-  "description": "Small Module to validate Javascript Variable (Objects) According to a set of predefined Rules",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha"
-  },
-  "author": "Khaled Romdhane <heiyukidev@gmail.com> (https://github.com/heiyukidev)",
-  "license": "MIT",
-  "keywords": [
-    "validator",
-    "validation",
-    "form",
-    "validation",
-    "heiyuki",
-    "types",
-    "type checking",
-    "array type"
-  ],
-  "devDependencies": {
-    "assert": "^1.4.1",
-    "mocha": "^3.3.0"
-  },
-  "directories": {
-    "test": "test"
-  },
-  "dependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/heiyukidev/hyvalidator.git"
-  },
-  "bugs": {
-    "url": "https://github.com/heiyukidev/hyvalidator/issues"
-  },
-  "homepage": "https://github.com/heiyukidev/hyvalidator#readme"
+    "name": "hyvalidator",
+    "version": "0.9.0",
+    "description": "Small Module to validate Javascript Variable (Objects) According to a set of predefined Rules",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha"
+    },
+    "author": "Khaled Romdhane <heiyukidev@gmail.com> (https://github.com/heiyukidev)",
+    "license": "MIT",
+    "keywords": [
+        "validator",
+        "validation",
+        "form",
+        "validation",
+        "heiyuki",
+        "types",
+        "type checking",
+        "array type"
+    ],
+    "devDependencies": {
+        "assert": "^1.4.1",
+        "mocha": "^3.3.0"
+    },
+    "directories": {
+        "test": "test"
+    },
+    "dependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/heiyukidev/hyvalidator.git"
+    },
+    "bugs": {
+        "url": "https://github.com/heiyukidev/hyvalidator/issues"
+    },
+    "homepage": "https://github.com/heiyukidev/hyvalidator#readme"
 }

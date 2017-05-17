@@ -5,17 +5,16 @@ const Objects = require('./modules/object.module.js');
 const Strings = require('./modules/string.module.js');
 
 
-
 function validate(object, rules) {
     if (rules.type === 'number') {
         return Numbers.isValid(object, rules);
     } else if (rules.type === 'string') {
         return Strings.isValid(object, rules);
-    }else if (rules.type === 'array') {
+    } else if (rules.type === 'array') {
         return Arrays.isValid(object, rules);
-    }else if (rules.type === 'boolean') {
+    } else if (rules.type === 'boolean') {
         return Booleans.isValid(object, rules);
-    }else if (rules.type === 'object') {
+    } else if (rules.type === 'object') {
         return Objects.isValid(object, rules);
     }
     return null;
